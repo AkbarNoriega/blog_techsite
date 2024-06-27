@@ -1,0 +1,149 @@
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente de texto */
+    background-color: #b8c0cd; /* Color de fondo para la página */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-image: url('/static/blog/techsite-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilo para el encabezado de la página */
+.header {
+    background: #333; /* Fondo del encabezado en color gris oscuro */
+    color: #fff; /* Color del texto en blanco */
+    padding: 10px 0; /* Relleno superior e inferior de 10px */
+    text-align: center; /* Centra el texto en el encabezado */
+}
+
+/* Estilo para el título del encabezado */
+.header h1 {
+    margin: 0; /* Elimina los márgenes del título */
+}
+
+/* Estilo para el menú de navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 10px 0; /* Margen superior e inferior de 10px */
+    display: flex; /* Utiliza flexbox para distribuir los elementos del menú */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+}
+
+/* Estilo para los elementos de la lista del menú de navegación */
+nav ul li {
+    margin: 0 10px; /* Margen izquierdo y derecho de 10px */
+}
+
+/* Estilo para los enlaces del menú de navegación */
+nav ul li a {
+    color: #fff; /* Color del texto en blanco */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    padding: 5px 10px; /* Relleno interior del enlace */
+    background: #555; /* Fondo del enlace en color gris medio */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+}
+
+/* Estilo para los enlaces del menú de navegación al pasar el ratón por encima */
+nav ul li a:hover {
+    background: #777; /* Fondo del enlace en color gris claro al pasar el ratón */
+}
+
+/* Estilo para la lista de publicaciones */
+.post-list {
+    width: 80%; /* Ancho del contenedor de la lista del 80% */
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrado horizontal */
+}
+
+/* Estilo para cada elemento individual de la publicación */
+.post-item {
+    background-color: rgba(117, 115, 124, 0.9); /* Fondo gris con transparencia del 90% */
+    border: 1px solid #000000; /* Borde negro opcional */
+    border-radius: 5px; /* Borde redondeado opcional */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior de 20px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la publicación */
+    margin-bottom: 20px; /* Margen inferior para separar las publicaciones */
+}
+
+
+/* Estilo para las imágenes dentro de las publicaciones */
+.post-item img {
+    max-width: 100%; /* La imagen no supera el ancho del contenedor */
+    height: auto; /* La altura se ajusta proporcionalmente */
+    display: block; /* La imagen se muestra como un bloque */
+    margin: 10px 0; /* Margen superior e inferior de 10px */
+}
+
+/* Estilo para los títulos de las publicaciones */
+.post-item h2 {
+    margin: 0; /* Elimina los márgenes del título */
+    padding-bottom: 10px; /* Relleno inferior de 10px */
+    border-bottom: 1px solid #ddd; /* Línea inferior gris claro */
+}
+
+/* Estilo para los párrafos dentro de las publicaciones */
+.post-item p {
+    margin: 10px 0; /* Margen superior e inferior de 10px */
+}
+
+.post-detail {
+    background-color: rgba(117, 115, 124, 0.9); /* Fondo gris con transparencia del 90% */
+    border: 1px solid #000000; /* Borde negro opcional */
+    border-radius: 5px; /* Borde redondeado opcional */
+    padding: 20px; /* Relleno para separar el texto de los bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Estilo para las imágenes en la vista de detalle de la publicación */
+.post-detail img {
+    max-width: 100%; /* La imagen no supera el ancho del contenedor */
+    height: auto; /* La altura se ajusta proporcionalmente */
+    display: block; /* La imagen se muestra como un bloque */
+    margin: 20px 0; /* Margen superior e inferior de 20px */
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background: #333; /* Fondo gris oscuro para el pie de página */
+    color: #fff; /* Color del texto en blanco */
+    padding: 10px 0; /* Relleno superior e inferior de 10px */
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+/* Estilo para formularios de creación de posts */
+.form-post {
+    background-color: rgba(117, 115, 124, 0.9); /* Fondo gris con transparencia del 90% */
+    border: 1px solid #000000; /* Borde negro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno para el formulario */
+    margin: 20px auto; /* Margen automático para centrar y separar del contenido circundante */
+    width: 80%; /* Ancho del formulario */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para el formulario */
+}
+
+.form-post input, .form-post textarea {
+    width: 100%; /* Asegura que los inputs tomen todo el ancho del formulario */
+    padding: 8px; /* Relleno para los inputs */
+    margin-bottom: 10px; /* Margen inferior para separar los inputs */
+    border: 1px solid #ccc; /* Borde gris claro para los inputs */
+}
+
+.form-post input[type="submit"] {
+    background-color: #555; /* Color de fondo para el botón de envío */
+    color: white; /* Color de texto para el botón de envío */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+
+nav ul li a {
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo */
+}
+
+nav ul li a:hover {
+    background: var(--link-hover-bg-color);
+}

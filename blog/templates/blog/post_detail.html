@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
+    <script src="{% static 'blog/scripts.js' %}" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ post.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'post_list' %}">Home</a></li>
+                <li><a href="{% url 'post_new' %}">Crear Blog</a></li>
+                <li><a href="/admin/">Admin</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="post-detail">
+        <p>{{ post.created_at }}</p>
+        <p>Precio: ${{ post.price }}</p>
+        {% if post.image %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+        {% endif %}
+        <div>{{ post.content }}</div>
+        <a href="{% url 'post_list' %}">Back to blog</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Blog</p>
+    </div>
+</body>
+</html>
